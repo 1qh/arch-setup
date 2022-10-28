@@ -1,0 +1,7 @@
+dnsmasq
+gdm
+gnome-control-center
+iptables-nft
+qemu-full
+virt-manager
+virt-viewer

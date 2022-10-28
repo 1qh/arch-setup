@@ -1,0 +1,16 @@
+brave-bin
+downgrade
+edex-ui-bin
+evremap
+grimshot
+labwc-git
+lf-bin
+losslesscut-bin
+micromamba-bin
+nvidia-docker
+pacseek-bin
+vim-plug
+visual-studio-code-bin
+wlroots-eglstreams-git
+wlr-randr
+wlsunset

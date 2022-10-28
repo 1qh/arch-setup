@@ -1,0 +1,8 @@
+nbpreview
+paddleocr
+paddlepaddle
+pdfarranger
+pip-review
+streamlit-webrtc
+tb-nightly
+torchsummary

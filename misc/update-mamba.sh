@@ -1,0 +1,3 @@
+micromamba install aria2 bentoml bpython byobu catboost dash datefinder deepchecks detectron2 diffusers django-environ dtreeviz dvc easydict einops evidently ffmpy flake8-bugbear fugue gdown great-expectations gunicorn icecream imageio imbalanced-learn inflect jupyter-book kaggle lightning-bolts lightning-flash lsdeluxe matplotx maya micro mlxtend neptune-lightgbm nvtop opencv pandarallel pandasgui pandera paramiko parse pip-autoremove prefect pycryptodome pydub pyspark python-duckdb python-graphviz pytorch-gpu pytorch-ignite py-xgboost-gpu spacy streamlit-pandas-profiling tensorflow-gpu torchinfo torchvision transformers visidata wandb websockets workalendar yapf youtube-dl -c conda-forge
+
+micromamba install fastbook timm -c fastai
