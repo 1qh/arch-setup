@@ -18,6 +18,9 @@ abbr v vimr
 abbr s sudo
 abbr c code
 abbr d docker
+abbr dc docker-compose
+abbr dcu docker-compose up -d
+abbr dcd docker-compose down
 abbr p bpython
 abbr m micromamba
 abbr nv nvidia-smi
@@ -29,7 +32,7 @@ abbr gitquick 'git add . && git commit -am "." && git push origin master'
 abbr atrm 'sudo pacman -Rns (pacman -Qdttq)'
 abbr pacin 'sudo pacman -S --needed'
 abbr pacrm 'sudo pacman -Rns'
-abbr myip 'curl ident.me'
+abbr myip 'curl ip.me'
 
 alias l="lsd -l $hide"
 alias ll="lsd -lA $hide $hidedot"
