@@ -24,10 +24,10 @@ moc
 motion
 mupdf
 ncdu
+nfs-utils
 nvidia-dkms
 openssh
 p7zip
-pdftk
 swaybg
 ttf-jetbrains-mono
 wf-recorder
