@@ -2,6 +2,7 @@ brave-bin
 downgrade
 evremap
 grimshot
+jump-bin
 labwc-git
 lf-bin
 losslesscut-bin
