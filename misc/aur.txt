@@ -1,6 +1,5 @@
 brave-bin
 downgrade
-edex-ui-bin
 evremap
 grimshot
 labwc-git
