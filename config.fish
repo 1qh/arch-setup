@@ -115,5 +115,5 @@ function listenyt -a url
 end
 
 function mamall
-    echo micromamba install (micromamba env export --from-history | grep -A 100 'es:' | awk '{print $2}' | grep . | sort) -c conda-forge
+    echo micromamba install (micromamba env export --from-history -n base | grep -A 100 'es:' | awk '{print $2}' | grep . | sort) -c conda-forge -n base
 end
