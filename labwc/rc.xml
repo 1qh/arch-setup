@@ -142,6 +142,25 @@
     </keybind>
   </keyboard>
 
+  <mouse>
+    <context name="Frame">
+      <mousebind button="W-Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="W-Left" action="Drag">
+        <action name="Move"/>
+      </mousebind>
+      <mousebind button="W-Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="W-Right" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+  </mouse>
+
   <libinput>
     <device category="DLL06E5:01 06CB:7A13 Touchpad">
       <naturalScroll>yes</naturalScroll>
