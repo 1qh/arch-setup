@@ -5,6 +5,7 @@ grimshot
 jump-bin
 labwc-git
 lf-bin
+linux-wifi-hotspot
 losslesscut-bin
 micromamba-bin
 nvidia-docker
