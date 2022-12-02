@@ -21,33 +21,32 @@ abbr d docker
 abbr dc docker-compose
 abbr dcu docker-compose up -d
 abbr dcd docker-compose down
-abbr p bpython
+abbr p python
 abbr m micromamba
 abbr mbin 'micromamba install -c conda-forge -n base'
 abbr nv nvidia-smi
 abbr st streamlit
 abbr rmr 'rm -rf'
-abbr fishcf 'vim --remote-tab-silent ~/arch-setup/config.fish'
+abbr fishcf 'vim --remote-tab-silent ~/nuc-arch/config.fish'
 abbr gs 'git status'
 abbr gitquick 'git add . && git commit -am "." && git push origin master'
 abbr atrm 'sudo pacman -Rns (pacman -Qdttq)'
 abbr pacin 'sudo pacman -S --needed'
 abbr pacrm 'sudo pacman -Rns'
 abbr myip 'curl ip.me'
+abbr cvat 'docker-compose -f ~/cvat/docker-compose.yml -f ~/cvat/components/serverless/docker-compose.serverless.yml up -d'
+abbr win "sudo virsh start 7; remote-viewer spice://localhost:5900 -f"
+abbr mntwin "sudo mount /dev/nvme0n1p4 ~/c"
+abbr screencap "/usr/lib/xdg-desktop-portal -r & /usr/lib/xdg-desktop-portal-wlr"
+
+abbr nasmount "sudo mount -t nfs 192.168.2.50:/volume1/01_TempData ~/asilla"
+abbr nasmount2 "sudo mount -t nfs 192.168.2.50:/volume2/02_SafeData ~/asilla"
+abbr nasumount "sudo umount ~/asilla"
 
 alias l="lsd -l $hide"
 alias ll="lsd -lA $hide $hidedot"
 alias vimr="vim --remote-tab-silent"
-alias ok="cd && clear && fish_greeting"
 alias mocp="mocp -T /usr/share/moc/themes/transparent-background"
-alias mntwin="sudo mount /dev/nvme0n1p4 ~/c"
-alias screencap="/usr/lib/xdg-desktop-portal -r & /usr/lib/xdg-desktop-portal-wlr"
-alias tableau="nohup wine64 ~/tableau/bin/tableau.exe & rm nohup.out"
-alias win="sudo virsh start 7; remote-viewer spice://localhost:5900 -f"
-
-alias today="set_color red; print_center 99 Today is $d"
-alias intro="print_center 98 Hello, I\'m Huy"
-alias greeting="print_center 98 Have a nice day!"
 
 function print_center -a width
     set -e argv[1]
@@ -62,15 +61,15 @@ function print_center -a width
 end
 
 function fish_greeting
-  today
+  set_color red
+  print_center 99 Today is $d
   set_color magenta
   cal -n3 | sed  -e :a -e 's/^.\{0,97\}$/ & /;ta'
   set_color blue
   echo \n\t\t\t' '$t' '\t' '$n' '\t' '$m' '\t' '$k' '\n
   set_color yellow
-  intro
-  greeting
-  micromamba activate
+  print_center 98 Hello, I\'m Huy
+  print_center 98 Have a nice day!
 end
 
 function cdls --on-variable PWD
@@ -104,7 +103,7 @@ function cl
 end
 
 function black_bg
-    dconf write "/org/gnome/desktop/background/picture-uri" "'file:///home/o/arch-setup/misc/b.png'"
+    dconf write "/org/gnome/desktop/background/picture-uri" "'file:///home/o/nuc-arch/misc/b.png'"
 end
 
 function sfpro
@@ -112,7 +111,7 @@ function sfpro
 end
 
 function listenyt -a url
-    youtube-dl -f bestaudio $url -o - 2>/dev/null | ffplay -nodisp -autoexit -i - &>/dev/null 
+    youtube-dl -f bestaudio $url -o - 2>/dev/null | ffplay -nodisp -autoexit -i - &>/dev/null
 end
 
 function mamall
