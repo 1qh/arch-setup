@@ -12,6 +12,6 @@ nvidia-docker
 pacseek-bin
 vim-plug
 visual-studio-code-bin
-wlroots-eglstreams-git
+wlroots-git
 wlr-randr
 wlsunset
