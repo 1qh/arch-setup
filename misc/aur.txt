@@ -3,7 +3,7 @@ downgrade
 evremap
 grimshot
 jump-bin
-labwc-git
+labwc
 lf-bin
 linux-wifi-hotspot
 losslesscut-bin
@@ -12,6 +12,5 @@ nvidia-docker
 pacseek-bin
 vim-plug
 visual-studio-code-bin
-wlroots-git
 wlr-randr
 wlsunset
