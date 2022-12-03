@@ -17,6 +17,7 @@ fzf
 github-cli
 gvim
 linux-headers
+lsd
 lxsession-gtk3
 mako
 man-db
