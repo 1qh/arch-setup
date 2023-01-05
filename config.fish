@@ -25,6 +25,7 @@ abbr dcd docker-compose down
 abbr p python
 abbr m micromamba
 abbr mbin 'micromamba install -c conda-forge -n base'
+abbr n pnpm
 abbr nv nvidia-smi
 abbr st streamlit
 abbr rmr 'rm -rf'

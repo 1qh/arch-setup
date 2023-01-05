@@ -32,6 +32,7 @@ nvidia-dkms
 openssh
 p7zip
 pulsemixer
+solidity
 swaybg
 ttf-jetbrains-mono
 wf-recorder
