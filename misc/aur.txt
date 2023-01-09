@@ -1,7 +1,7 @@
 bluetuith-bin
 brave-bin
 downgrade
-evremap
+evremap-git
 grimshot
 jump-bin
 labwc
